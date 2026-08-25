@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Joemar Resmondo is a Grade 12 student who is still learning and working toward becoming a successful programmer."
+    />
+    <title>Joemar Resmondo | Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="is-loading">
+    <div
+      class="page-loader"
+      id="page-loader"
+      role="status"
+      aria-label="Loading Joemar Resmondo portfolio"
+    >
+      <div class="loader-content">
+        <div class="loader-orbit"><span class="loader-core"></span></div>
+        <h1 class="loader-name">Joemar<br /><em>Resmondo.</em></h1>
+        <div class="loader-label">
+          <span>Preparing portfolio</span><span id="loader-percent">0%</span>
+        </div>
+        <div class="loader-track">
+          <span class="loader-progress" id="loader-progress"></span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="pay-modal"
+      id="pay-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="pay-title"
+    >
+      <div class="pay-modal-card">
+        <p class="section-label">Portfolio access</p>
+        <h2 id="pay-title">Pay Me To Continue</h2>
+        <p>Ready to see what I build?</p>
+        <button id="pay-button" type="button">
+          Pay Me To Continue <span aria-hidden="true">↗</span>
+        </button>
+      </div>
+    </div>
+    <div
+      class="pay-modal is-hidden"
+      id="payment-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="payment-title"
+    >
+      <div class="pay-modal-card payment-card">
+        <p class="section-label">Payment details</p>
+        <h2 id="payment-title">Pay $199.00</h2>
+        <label class="card-input-label" for="card-number">Card number</label>
+        <input
+          class="card-number-input"
+          id="card-number"
+          type="text"
+          placeholder="Enter any card number"
+          autocomplete="off"
+        />
+        <div class="payment-detail">
+          <span>Amount</span><strong>$199.00</strong>
+        </div>
+        <p class="payment-note">Donation.</p>
+        <button id="continue-button" type="button">
+          Continue to Portfolio <span aria-hidden="true">↗</span>
+        </button>
+      </div>
+    </div>
+    <header class="site-header">
+      <a class="logo" href="#top">JR<span>.</span></a>
+      <nav id="site-nav" aria-label="Main navigation">
+        <a href="#work">Projects</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          type="button"
+          aria-label="Switch to dark mode"
+          title="Switch theme"
+        >
+          ☾
+        </button>
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-scene" id="hero-scene" aria-hidden="true">
+          <canvas id="scene-canvas"></canvas>
+        </div>
+        <p class="kicker">Designer / Developer / Independent</p>
+        <div class="name-stage">
+          <h1 class="typing-name" aria-label="Joemar Resmondo">
+            <span id="typed-first"></span><br /><em
+              ><span id="typed-last"></span></em
+            ><span class="typing-cursor" aria-hidden="true"></span>
+          </h1>
+        </div>
+        <figure class="hero-profile">
+          <img src="1.jpg" alt="Joemar Resmondo profile image" />
+          <figcaption>Joemar Resmondo / Personal portfolio</figcaption>
+        </figure>
+        <div class="hero-foot">
+          <p class="hero-intro">
+            Hi, I'm Joemar, a Grade 12 student who is still learning and growing
+            through every project. My goal is to become a successful programmer
+            and build useful technology.
+          </p>
+          <p class="availability">Available for select projects</p>
+        </div>
+        <span class="scroll-note">Scroll to explore ↓</span>
+      </section>
+
+      <section class="section scroll-reveal" id="work">
+        <div class="section-heading">
+          <h2>Projects &amp; work</h2>
+          <p>01 — 04 / 2024—26</p>
+        </div>
+        <div class="work-grid">
+          <a
+            class="project"
+            href="https://xitrixtravelprov-bot.github.io/website/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><div class="project-visual large">
+              <div class="project-art">
+                <strong>GameZone</strong
+                ><small>Gaming discovery website / 2026</small>
+              </div>
+            </div>
+            <div class="project-info">
+              <div>
+                <h3>GameZone</h3>
+                <p>Gaming discovery website</p>
+              </div>
+              <span>↗</span>
+            </div></a
+          >
+          <a
+            class="project"
+            href="https://xitrixtravelprov-bot.github.io/Todolist/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><div class="project-visual small">
+              <div class="project-art">
+                <strong>To-Do List</strong
+                ><small>Productivity app / 2026</small>
+              </div>
+            </div>
+            <div class="project-info">
+              <div>
+                <h3>To-Do List</h3>
+                <p>Task management website</p>
+              </div>
+              <span>↗</span>
+            </div></a
+          >
+        </div>
+      </section>
+
+      <section class="section about scroll-reveal" id="about">
+        <div>
+          <p class="section-label">Education</p>
+          <h2>Grade 12 student, still learning and building.</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            I'm Joemar Resmondo, a Grade 12 student who is passionate about
+            technology, programming, and creating websites.
+          </p>
+          <p>
+            I'm continuing to improve my skills through practice, school, and
+            personal projects. My goal is to become a successful programmer and
+            create useful solutions that can help people.
+          </p>
+          <div class="skills">
+            <span class="skill">HTML + CSS</span
+            ><span class="skill">JavaScript</span
+            ><span class="skill">Database</span><span class="skill">Java</span
+            ><span class="skill">Python</span
+            ><span class="skill">Java Swing</span
+            ><span class="skill">Problem solving</span
+            ><span class="skill">Continuous learning</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills-section scroll-reveal" id="skills">
+        <div class="section-heading">
+          <h2>Skills</h2>
+          <p>What I bring to the table</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <img
+              class="skill-card-image"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+              alt="Design tools"
+              loading="lazy"
+            /><strong>01 / Design</strong>
+            <p>Visual identity<br />Art direction<br />UI / UX design</p>
+          </div>
+          <div class="skill-card">
+            <img
+              class="skill-card-image"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/codepen/codepen-original.svg"
+              alt="Development"
+              loading="lazy"
+            /><strong>02 / Build</strong>
+            <div class="skill-tech-grid">
+              <div class="skill-tech">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                  alt="HTML5"
+                  loading="lazy"
+                /><span>HTML</span>
+              </div>
+              <div class="skill-tech">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                  alt="CSS3"
+                  loading="lazy"
+                /><span>CSS</span>
+              </div>
+              <div class="skill-tech">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                  alt="JavaScript"
+                  loading="lazy"
+                /><span>JavaScript</span>
+              </div>
+              <div class="skill-tech">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                  alt="Database"
+                  loading="lazy"
+                /><span>Database</span>
+              </div>
+              <div class="skill-tech">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                  alt="Java"
+                  loading="lazy"
+                /><span>Java</span>
+              </div>
+              <div class="skill-tech">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                  alt="Python"
+                  loading="lazy"
+                /><span>Python</span>
+              </div>
+              <div class="skill-tech">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                  alt="Java Swing"
+                  loading="lazy"
+                /><span>Java Swing</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <img
+              class="skill-card-image"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg"
+              alt="Strategy and planning"
+              loading="lazy"
+            /><strong>03 / Strategy</strong>
+            <p>Creative direction<br />Content systems<br />Design thinking</p>
+          </div>
+          <div class="skill-card">
+            <img
+              class="skill-card-image"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+              alt="Development tools"
+              loading="lazy"
+            /><strong>04 / Tools</strong>
+            <p>Figma<br />Adobe Creative Cloud<br />Git + GitHub</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact scroll-reveal" id="contact">
+        <p class="section-label">Have a project in mind?</p>
+        <h2>Let's make<br />something clear.</h2>
+        <a class="contact-link" href="mailto:joemarjoemarresmondo@gmail.com"
+          >joemarjoemarresmondo@gmail.com <span>↗</span></a
+        >
+      </section>
+    </main>
+    <footer class="site-footer">
+      <span>© <span id="year"></span> Joemar Resmondo</span
+      ><span>Designed with intent / Built with care</span>
+    </footer>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
