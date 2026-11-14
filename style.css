@@ -90,7 +90,7 @@ h1, h2, h3, p { margin-top: 0; }
 .button:hover { transform: translateY(-2px); }
 .button-dark { background: #f6f3eb; color: #0f1211; box-shadow: 0 10px 25px rgba(246, 243, 235, 0.12); }
 .button-dark:hover { background: #e7e2d6; }
-.button-lime { background: var(--lime); color: var(--ink); }
+.button-lime { background: var(--lime); color: #172019; }
 .button-lime:hover { background: #e0ff87; }
 .text-link { font-size: 11px; font-weight: 600; }
 .text-link span { padding-left: 7px; }
@@ -214,17 +214,68 @@ h1, h2, h3, p { margin-top: 0; }
 .service-tags { color: #b5bcb4; font: 7px var(--mono); letter-spacing: .04em; }
 
 .toolkit-section { display: flex; flex-direction: column; align-items: stretch; gap: 22px; padding-top: 30px; padding-bottom: 30px; border-bottom: 1px solid var(--line); }
-.toolkit-groups { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
-.toolkit-group h2 { margin: 0 0 11px; color: #a9b0a6; font: 9px var(--mono); letter-spacing: .06em; text-transform: uppercase; }
-.toolkit-list { display: flex; flex-wrap: wrap; justify-content: end; gap: 8px; }
-.toolkit-list span {
-  padding: 8px 11px;
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 999px;
-  background: rgba(255,255,255,0.02);
-  color: #d5ddd4;
-  font: 9px var(--mono);
+.toolkit-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
+.toolkit-group h2 { display: flex; align-items: center; gap: 9px; margin: 0 0 12px; color: #a9b0a6; font: 9px var(--mono); letter-spacing: .06em; text-transform: uppercase; }
+.toolkit-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 180px)); gap: 12px; }
+.toolkit-icon { width: 18px; height: 18px; flex: 0 0 auto; fill: none; stroke: var(--accent); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.6; }
+.toolkit-group:nth-child(2) .toolkit-icon { fill: var(--accent); stroke: none; }
+.toolkit-card, .toolkit-chip {
+  position: relative;
+  display: grid;
+  min-width: 0;
+  min-height: 140px;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: 1fr 44px 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: linear-gradient(145deg, rgba(255,255,255,0.035), rgba(255,255,255,0.01));
+  color: #d5ddd4;
+  font: 600 12px var(--sans);
+  text-align: center;
+}
+.toolkit-card-category, .toolkit-chip::before {
+  color: #9da69b;
+  font: 8px var(--mono);
+  letter-spacing: .06em;
+  text-align: center;
+  align-self: center;
+}
+.toolkit-card-category, .toolkit-chip::before { display: none; }
+.toolkit-card h2 { margin: 0; color: var(--ink); font: 600 13px var(--display); text-align: center; }
+.toolkit-logo {
+  width: 44px;
+  height: 44px;
+  display: inline-grid;
+  flex: 0 0 44px;
+  place-items: center;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 50%;
+  background: #232a26;
+  color: #e8eee6;
+  font: 700 14px var(--sans);
+  letter-spacing: -.04em;
+  grid-row: 2;
+}
+.logo-html { background: #e34f26; color: white; }
+.logo-css { background: #1572b6; color: white; }
+.logo-js { background: #f0db4f; color: #252525; }
+.logo-php { background: #777bb4; color: white; font-size: 8px; }
+.logo-java { background: #e8e1d7; color: #b34b2c; font-size: 11px; }
+.logo-python { background: #3776ab; color: #ffda44; }
+.logo-node { background: #43853d; color: white; font-size: 8px; }
+.logo-react { background: #17252d; color: #61dafb; font-size: 14px; }
+.logo-chatgpt { background: #10a37f; color: white; font-size: 13px; }
+.logo-copilot { background: #34313e; color: #d8c8ff; font-size: 12px; }
+.logo-mysql { background: #0876a8; color: white; font-size: 8px; }
+.logo-xampp { background: #f29b21; color: #2b261d; font-size: 13px; }
+.logo-supabase { background: #1c3028; color: #3ecf8e; font-size: 12px; }
 
 .process-section { padding-top: 84px; padding-bottom: 90px; }
 .process-list { border-top: 1px solid var(--line); }
@@ -320,8 +371,7 @@ h1, h2, h3, p { margin-top: 0; }
   .service-item h3 { margin-top: 21px; }
   .service-item p { min-height: 0; }
   .service-icon { top: 17px; right: 8px; }
-  .toolkit-groups { grid-template-columns: 1fr; gap: 20px; }
-  .toolkit-list { justify-content: start; }
+  .toolkit-card, .toolkit-chip { min-height: 132px; padding: 12px; }
   .process-step { grid-template-columns: 45px 1fr 24px; min-height: 90px; }
   .process-step p { max-width: 390px; font-size: 10px; line-height: 1.6; }
   .client-inner { grid-template-columns: 1fr; gap: 32px; }
